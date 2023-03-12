@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Page</title>
+    <link rel="stylesheet" href="detailPage.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/1cb0bb75dc.js" crossorigin="anonymous"></script>
+        <style>
+            body {
+        margin: 0%;
+        font-size: 14px;    ;
+        }
+        #sc1 {
+        display: flex;
+        justify-content: space-between;
+        max-width: 95%;
+        margin: auto;
+        }
+        #sc11 {
+        margin-top: -10px;
+        display: flex;
+        width: 30%;
+        justify-content: space-around;
+        font-size: 13px;
+        }
+        #sc12 {
+        margin-top: -0.7%;
+        display: flex;
+        width: 28%;
+        justify-content: space-around;
+        /* height:20px; */
+        /* border: 1px solid black; */
+        font-size: 13px;
+        
+        
+        }
+        #sc12 > div:nth-child(5) > i {
+        font-size: 130%;
+        margin-left: -2%;
+        /* border: 1px solid black */
+        }
+        #sc12 > div:nth-child(4) > i {
+        font-size: 20px;
+        margin-left: -10px;
+        }
+        #absolute_My_eBay {
+        position: absolute;
+        top: 30px;
+        right: 65px;
+        background-color: #ffffff;
+        display: none;
+        height:300px;
+        width: 200px;
+        border:1px solid rgb(238, 234, 234)
+        }
+        #helloMouse:hover #absolute_My_eBay {
+        display: block;
+        transition: transform(5s);
+        
+        }
+        #absolute_My_eBay >a{
+            color: black;
+            text-decoration: none;
+            
+        }
+        #absolute_My_eBay >a>p{
+        margin-left: 10px;
+        }
+        #sc122{
+            position: absolute;
+            height:300px;
+            width: 480px;
+            background-color: #ffffff;
+            right:30px;
+            text-align: center;
+            display: none;
+            border:1px solid rgb(238, 234, 234)
+        }
+        #sc121:hover #sc122 {
+        display: block;
+        }
+        #sc122>h1{
+        margin-top: 120px;
+        color: #d4d3d3;
+        }
+        #sc131{
+            position: absolute;
+            height:150px;
+            width:300px;
+            background-color: #ffffff;
+            right:30px;
+            text-align: center;
+            color: #cec7c7;
+            display: none;
+            border:1px solid rgb(238, 234, 234)
+        }
+        #sc13:hover #sc131{
+        display: block;
+        }
+        
+        
+        
+        
+        /* 1st navbar css part end here */
+        
+        
+        
+        
+        
+        #shconatainer {
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        #shc1 {
+        text-align: end;
+        /* font-size: 18px; */
+        margin-top: -0.5%;
+        }
+        
+        #shc2 > img {
+        height: 100%;
+        width: 100%;
+        }
+        #shc2 {
+        margin-top: -0.5%;
+        margin-left: 1%;
+        /* border: 1px solid black; */
+        height:48px;
+        width: 8%;
+        }
+        #shc3 {
+        height: 150px;
+        width: 28%;
+        background-color: #3665f3;
+        display: flex;
+        margin: auto;
+        margin-top: 3%;
+        /* border: 1px solid red; */
+        /* font-size: 10px; */
+        
+        }
+        #shc31 > div {
+        height: 25px;
+        background-color: white;
+        width: 25px;
+        text-align: center;
+        margin-top: 60px;
+        border-radius: 50%;
+        margin-left: 15px;
+        border: 1px solid #3665f3;
+        
+        }
+        #shc31 > div > p {
+        margin-top:5px;
+          /* padding-left: -20px; */
+        color: #3665f3;
+        }
+        #shc32 {
+        margin-top: 18px;
+        /* font-size: 18px; */
+        margin-left: 10px;
+        color: white;
+        /* font-family: sans-serif; */
+        width: 80%;
+        /* border: 1px solid red; */
+        
+        }
+        #shc4 {
+        margin-left: 46%;
+        /* border: 1px solid red; */
+        font-size: 25px;
+        height:30px;
+        width:100px;
+        margin-top: -1.5%;
+        }
+        
+        
+        #shc5 {
+        margin-left: 41%;
+        /* margin-top: -2%; */
+        /* border: 1px solid red; */
+        
+        }
+        #shc6 {
+        margin: auto;
+        height: 500px;
+        width: 26%;
+        /* border: 1px solid red; */
+        
+        }
+        #shc61 > input {
+        width: 98%;
+        border-radius: 7px;
+        height: 37px;
+        margin-top: 20px;
+        background-color: #f7f7f7;
+        font: 20px;
+        border: 1px solid rgb(131, 131, 131);
+        
+        }
+        
+        #shc61 > button {
+        width: 100%;
+        border-radius: 30px;
+        height: 45px;
+        margin-top: 20px;
+        /* border: 1px solid red; */
+        /* justify-content: center; */
+        }
+        #shc61 > button>h2{
+            margin-top: 2.2%;
+            font-size: 18px;
+            }
+            #shc61 > hr {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            }
+            #shc7 {
+            display: flex;
+            margin-left: 43%;
+            margin-top: -8%;
+            width: 10%;
+            height: 40px;
+            /* border: 1px solid red; */
+            
+            }
+            #shc7 > input {
+            margin-top: 16px;
+            margin-left: 30px;
+            }
+            #shc8 {
+            display: flex;
+            margin-left: 42%;
+            margin-top: -20px;
+            width: 16%;
+            height: 70px;
+            /* border: 1px solid red; */
+            
+            }
+            #shc9 {
+            margin-left: 46%;
+            margin-top: -20px;
+            /* border: 1px solid red; */
+            
+            }
+            #shc10 {
+            margin-left: 20%;
+            margin-top: 40px;
+            color: grey;
+            }
+            
+            /* sign css part end here */
+            
+            body {
+            margin: 0%;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+            #shuc1 {
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-between;
+            width: 97%;
+            margin-left: 1%;
+            }
+            #shuc1 > img {
+            height: 50px;
+            }
+            #shuc2 {
+            height: 150px;
+            width: 35%;
+            background-color: #3665f3;
+            display: flex;
+            margin: auto;
+            margin-top: 3%;
+            }
+            #shuc21 > div {
+            height: 30px;
+            background-color: white;
+            width: 30px;
+            text-align: center;
+            margin-top: 60px;
+            border-radius: 50%;
+            margin-left: 15px;
+            }
+            #shuc21 > div > p {
+            padding-top: 5px;
+            color: #3665f3;
+            }
+            #shuc22 {
+            margin-top: 10px;
+            font-size: 18px;
+            margin-left: 20px;
+            color: white;
+            font-family: sans-serif;
+            width: 90%;
+            }
+            #shuc3 {
+            margin-left: 38%;
+            font-size: 25px;
+            }
+            #shuc4 {
+            display: flex;
+            margin-left: 38%;
+            width: 25%;
+            justify-content: space-evenly;
+            margin-top: -20px;
+            }
+            #shuc4 > input {
+            margin-top: 20px;
+            font-size: 20px;
+            
+            }
+            #shuc4 > i {
+            margin-top: 15px;
+            font-size: 20px;
+            }
+            #shuc5 {
+            height: 400px;
+            width: 30%;
+            margin: auto;
+            }
+            #shuc5 > input[type="text"]:nth-child(1) {
+            height: 45px;
+            width: 45%;
+            border-radius: 10px;
+            background-color: #f7f7f7;
+            border: 1px solid rgb(131, 131, 131);
+            
+            }
+            #shuc5 > input[type="text"]:nth-child(2) {
+            height: 45px;
+            width: 45%;
+            border-radius: 10px;
+            margin-left: 5%;
+            background-color: #f7f7f7;
+            border: 1px solid rgb(131, 131, 131);
+            
+            }
+            #shuc5 > input[type="email"]:nth-child(3) {
+            height: 45px;
+            width: 98%;
+            border-radius: 10px;
+            background-color: #f7f7f7;
+            margin-top: 40px;
+            border: 1px solid rgb(131, 131, 131);
+            
+            }
+            #shuc5 > input[type="password"]:nth-child(4) {
+            height: 45px;
+            width: 98%;
+            border-radius: 10px;
+            background-color: #f7f7f7;
+            margin-top: 40px;
+            border: 1px solid rgb(131, 131, 131);
+            }
+            #shuc5 > p {
+            margin-top: 30px;
+            }
+            #shuc5 > button {
+            height: 55px;
+            width: 98%;
+            border-radius: 100px;
+            background-color: #c7c7c7;
+            color: white;
+            border: #c7c7c7;
+            }
+            #shuc6 {
+            margin-left: 20%;
+            margin-top: 40px;
+            color: grey;
+            }
+            
+            #shuconatainer > hr {
+            margin-top: 2%;
+            }
+            
+            /* register css part end here */
+            
+            #sc2 {
+            display: flex;
+            height: 85px;
+            margin-top: -1%;
+            /* border:1px solid red; */
+            }
+            
+            #sc21 {
+            height: 55%;
+            width: 9%;
+            margin-left: 3%;
+            margin-top: 1.4%;
+            /* border:1px solid red; */
+            
+            }
+            #sc21 > img {
+            height: 100%;
+            width: 100%;
+            }
+            
+            #sc22 {
+            width: 4%;
+            padding-top: 1%;
+            color: #888585;
+            display: flex;
+            margin-left: 1%;
+            /* border: 1px solid red; */
+            
+            font-size: 14px;
+            }
+            #sc22 > i {
+                margin-top: 50%;
+                margin-left: 0.5%;
+                /* border: 1px solid red; */
+                
+                }
+                #sc23 {
+                height: 50%;
+                width: 60%;
+                border: 3px solid black;
+                margin: 1.4% 0% 0% 1.5%;
+                display: flex;
+                /* border:1px solid red; */
+                
+                }
+                #sc23 > i {
+                font-size: 22px;
+                margin-top: 1%;
+                }
+                #sc23 > input {
+                height: 70%;
+                width: 80%;
+                border: transparent;
+                padding:5px;
+                font-size:22px;
+                /* border:1px solid green; */
+                outline:none
+                }
+                #sc23 >div> button {
+                height: 98%;
+                width: 92%;
+                margin-left: -5px;
+                border: transparent;
+                /* padding: 20px; */
+                background-color: transparent;
+                font-size: 14px;
+                /* border: 1px solid red; */
+                
+                }
+                #sc23 >div{
+                    width:18%
+                }
+                #sc23 >div>i{
+                    margin-left: -15%;
+                /* border: 1px solid red; */
+                
+                }
+                #sc2>button{
+                    height: 54%;
+                    width:13%;
+                    background-color: #3665f3;
+                    color: white;
+                    font-size: 15px;
+                    border: transparent;
+                    margin: 1.5% 0% 0% 0.5%;
+                /* border: 1px solid red; */
+                    
+                }
+                #sc3{
+                    
+                    width: 98%;
+                    margin: auto;
+                    margin-top: -10px;
+                }
+                #sc4{
+                    display: flex;
+                    width: 90%;
+                    margin: auto;
+                    margin-top: -10px;
+                }
+                #sc4>div>a{
+                    text-decoration: none;
+                    color: rgb(83, 81, 81);
+                }
+                #sc4>div{
+                    margin-left: 35px;
+                }
+                #sc431{
+                    display: none;
+                    height:350px;
+                    width:95%;
+                    position: absolute;
+                    background-color: #ffffff;
+                    right:30px;
+                    top:145px;
+                    text-align: center;
+                    border:1px solid rgb(238, 234, 234)
+                }
+                #sc431>div{
+                    margin-left:20px
+                }
+                #sc431>div>img{
+                height: 90%;
+                width:95%;
+                margin:10px;
+                }
+                #sc431 > div:nth-child(3){
+                    /* border: 1px solid red; */
+                    width:65% 
+                }
+                #sc431>div>a{
+                    color:black;
+                    text-decoration: none;
+                }
+                #sc43:hover #sc431{
+                display: block;
+                display: flex;
+                }
+                #sc441{
+                    display: none;
+                    height:350px;
+                    width:95%;
+                    position: absolute;
+                    background-color: #ffffff;
+                    right:30px;
+                    top:145px;
+                    text-align: center;
+                    border:1px solid rgb(238, 234, 234)
+                    
+                }
+                #sc441>div{
+                    margin-left:20px
+                }
+                #sc441>div>img{
+                height: 90%;
+                width:95%;
+                margin:10px;
+                }
+                #sc441 > div:nth-child(3){
+                    /* border: 1px solid red; */
+                    width:65% 
+                }
+                #sc44:hover #sc441{
+                display: block;
+                display: flex;
+                }
+                #sc441>div>a{
+                    color:black;
+                    text-decoration: none;
+                }
+                
+                
+                
+                #sc451{
+                    display: none;
+                    height:350px;
+                    width:95%;
+                    position: absolute;
+                    background-color: #ffffff;
+                    right:30px;
+                    top:145px;
+                    text-align: center;
+                    border:1px solid rgb(238, 234, 234)
+                    
+                }
+                #sc451>div{
+                    margin-left:20px
+                }
+                #sc451>div>img{
+                height: 90%;
+                width:95%;
+                margin:10px;
+                }
+                #sc451 > div:nth-child(3){
+                    /* border: 1px solid red; */
+                    width:65% 
+                }
+                #sc45:hover #sc451{
+                display: block;
+                display: flex;
+                }
+                #sc451>div>a{
+                    color:black;
+                    text-decoration: none;
+                }
+                
+                
+                #sc461{
+                    display: none;
+                    height:350px;
+                    width:95%;
+                    position: absolute;
+                    background-color: #ffffff;
+                    right:30px;
+                    top:145px;
+                    text-align: center;
+                    border:1px solid rgb(238, 234, 234)
+                    
+                }
+                #sc461>div{
+                    margin-left:20px
+                }
+                #sc461>div>img{
+                height: 90%;
+                width:95%;
+                margin:10px;
+                }
+                #sc461 > div:nth-child(3){
+                    /* border: 1px solid red; */
+                    width:65% 
+                }
+                #sc46:hover #sc461{
+                    display: block;
+                    display: flex;
+                    }
+                    #sc461>div>a{
+                        color:black;
+                        text-decoration: none;
+                    }
+                    
+                    
+                    
+                    #sc471{
+                        display: none;
+                        height:350px;
+                        width:95%;
+                        position: absolute;
+                        background-color: #ffffff;
+                        right:30px;
+                        top:145px;
+                        text-align: center;
+                        border:1px solid rgb(238, 234, 234)
+                        
+                    }
+                    #sc471>div{
+                        margin-left:20px
+                    }
+                    #sc471>div>img{
+                    height: 90%;
+                    width:95%;
+                    margin:10px;
+                    }
+                    #sc471 > div:nth-child(3){
+                        /* border: 1px solid red; */
+                        width:65% 
+                    }
+                    #sc47:hover #sc471{
+                    display: block;
+                    display: flex;
+                    }
+                    #sc471>div>a{
+                        color:black;
+                        text-decoration: none;
+                    }
+                    
+                    
+                    #sc481{
+                        display: none;
+                        height:350px;
+                        width:95%;
+                        position: absolute;
+                        background-color: #ffffff;
+                        right:30px;
+                        top:145px;
+                        text-align: center;
+                        border:1px solid rgb(238, 234, 234)
+                        
+                    }
+                    #sc481>div{
+                        margin-left:20px
+                    }
+                    #sc481>div>img{
+                    height: 90%;
+                    width:95%;
+                    margin:10px;
+                    }
+                    #sc481 > div:nth-child(3){
+                        /* border: 1px solid red; */
+                        width:65% 
+                    }
+                    #sc48:hover #sc481{
+                    display: block;
+                    display: flex;
+                    }
+                    #sc481>div>a{
+                        color:black;
+                        text-decoration: none;
+                    }
+                    
+                    
+                    
+                    #sc491{
+                        display: none;
+                        height:350px;
+                        width:95%;
+                        position: absolute;
+                        background-color: #ffffff;
+                        right:30px;
+                        top:145px;
+                        text-align: center;
+                        border:1px solid rgb(238, 234, 234)
+                        
+                    }
+                    #sc491>div{
+                        margin-left:20px
+                    }
+                    #sc491>div>img{
+                    height: 90%;
+                    width:95%;
+                    margin:10px;
+                    }
+                    #sc491 > div:nth-child(3){
+                        /* border: 1px solid red; */
+                        width:65% 
+                    }
+                    #sc49:hover #sc491{
+                    display: block;
+                    display: flex;
+                    }
+                    #sc491>div>a{
+                        color:black;
+                        text-decoration: none;
+                    }
+                    
+                    
+                    
+                    #sc511{
+                        display: none;
+                        height:350px;
+                        width:95%;
+                        position: absolute;
+                        background-color: #ffffff;
+                        right:30px;
+                        top:145px;
+                        text-align: center;
+                        border:1px solid rgb(238, 234, 234)
+                        
+                    }
+                    #sc511>div{
+                        margin-left:20px
+                    }
+                    #sc511>div>img{
+                    height: 90%;
+                    width:95%;
+                    margin:10px;
+                    }
+                    #sc511 > div:nth-child(3){
+                        /* border: 1px solid red; */
+                        width:65% 
+                    }
+                    #sc51:hover #sc511{
+                    display: block;
+                    display: flex;
+                    }
+                    #sc511>div>a{
+                        color:black;
+                        text-decoration: none;
+                    }
+                    
+                    
+                    #sc531{
+                        display: none;
+                        height:350px;
+                        width:95%;
+                        position: absolute;
+                        background-color: #ffffff;
+                        right:30px;
+                        top:145px;
+                        text-align: center;
+                        border:1px solid rgb(238, 234, 234)
+                        
+                    }
+                    #sc531>div{
+                        margin-left:20px
+                    }
+                    #sc531>div>img{
+                    height: 90%;
+                    width:95%;
+                    margin:10px;
+                    }
+                    #sc531 > div:nth-child(3){
+                        /* border: 1px solid red; */
+                        width:65% ;
+                        margin-left: 20%;
+                    }
+                    #sc53:hover #sc531{
+                    display: block;
+                    display: flex;
+                    }
+                    #sc531>div>a{
+                        color:black;
+                        text-decoration: none;
+                    }
+                    
+                    #sc6{
+                        height:400px;
+                        width:100%;
+                        margin-top: -10px;
+                    
+                    }
+                    #sc6>img{
+                        height:100%;
+                        width:100%
+                    }
+                    body{
+                        margin: 0%;
+                    }
+                    #sc7{
+                        height:600px;
+                        width:100%;
+                         /* border:1px solid black; */
+        margin-top:10px;
+        background-color: #ffffff;
+    }
+    #sc7>hr{
+    margin-top: 120px;
+    }
+    #sc71{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: 400px;
+    }
+    
+        #sc71>div>a>p{
+            margin-left: 50px;
+            color:#767676;
+            text-decoration: none;
+    
+        }
+        #sc71>div>a>h3{
+            margin-left: 50px;
+            color:#767676;
+        }
+        #sc71>div>a{
+            text-decoration: none;
+        }
+        </style>
+</head>
+
+<body>
+    
+    <div id="sc1">
+        <div id="sc11">
+            <h4 id="sc111">Hi! <a href="signin.html">Sign in</a> or <a href="register.html">register</a></h4>
+            <h4> <a href="" style="color:black; text-decoration: none; ">Daily Deals</a></h4>
+            <h4><a href="" style="color:black;  text-decoration: none;">Help & Contact</a></h4>
+
+        </div>
+        <div id="sc12">
+            <h4>Sell </h4>
+            <h4>Watchlist <i class="fa-solid fa-angle-down"></i></h4>
+            <div id="helloMouse">
+                <h4 onclick="window.location.href='signin.html'">My eBay<i class="fa-solid fa-angle-down"></i></h4>
+                <div id="absolute_My_eBay">
+                    <a href="">
+                        <p>Summary</p>
+                    </a>
+                    <a href="">
+                        <p>Recently Viewed</p>
+                    </a>
+                    <a href="">
+                        <p> Bids/Offers</p>
+                    </a>
+                    <a href="watchlist.html">
+                        <p>Watchlist</p>
+                    </a>
+                    <a href="">
+                        <p>Purchase History</p>
+                    </a>
+                    <a href="">
+                        <p>Buy Again</p>
+                    </a>
+                    <a href="">
+                        <p>Selling</p>
+                    </a>
+                    <a href="saved.html">
+                        <p>Saved Searches</p>
+                    </a>
+                    <a href="">
+                        <p>Saved Sellers</p>
+                    </a>
+                    <a href="">
+                        <p>Messages</p>
+                    </a>
+
+                </div>
+            </div>
+            <div style="padding:3.5%;" id="sc121">
+                <i class="fa-solid fa-bell"></i>
+                <div id="sc122">
+                    <h1>You are all caught up!</h1>
+                </div>
+
+            </div>
+            <div style="margin:5%;" id="sc13">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div id="sc131">
+                    <h1>Your cart is empty</h1>
+                    <h3>Time to start shopping!</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <hr style="margin-top:-1%; color: #f1ebeb;">
+
+
+
+
+    <!-- 
+        Art supplies
+Musical instruments
+        1st nav bar ends here
+    -->
+
+
+
+    <div id="sc2">
+        <div id="sc21" onclick="window.location.href='index.html'">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/1200px-EBay_logo.svg.png"
+                alt="">
+        </div>
+
+        <div id="sc22">
+            <p>
+                Shop by category
+            </p>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div id="sc23">
+            <i class="fa-solid fa-magnifying-glass" style="margin-left: 5px;"></i>
+            <input type="text" name="" id="">
+            <div>
+                <button name="" id="">
+                    All category
+                </button>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+        </div>
+
+        <button>
+            Search
+        </button>
+    </div>
+
+    <div id="sc3">
+        <hr>
+    </div>
+
+
+    <!-- 3rd nav bar  starts from here
+    Health & Beauty-->
+
+
+
+
+    <!-- header Section Closed-->
+
+     <!-- top navber and bottom navbar -->
+<!-- 
+     <div id="sc1">
+        <div id="sc11">
+            <h4 id="sc111">Hi! <a href="signin.html">Sign in</a> or <a href="register.html">register</a></h4>
+            <h4> <a href="" style="color:black; text-decoration: none; ">Daily Deals</a></h4>
+            <h4><a href="" style="color:black;  text-decoration: none;">Help & Contact</a></h4>
+
+        </div>
+        <div id="sc12">
+            <h4>Sell </h4>
+            <h4>Watchlist <i class="fa-solid fa-angle-down"></i></h4>
+            <div id="helloMouse">
+                <h4 onclick="window.location.href='signin.html'">My eBay<i class="fa-solid fa-angle-down"></i></h4>
+                <div id="absolute_My_eBay">
+                    <a href="">
+                        <p>Summary</p>
+                    </a>
+                    <a href="">
+                        <p>Recently Viewed</p>
+                    </a>
+                    <a href="">
+                        <p> Bids/Offers</p>
+                    </a>
+                    <a href="watchlist.html">
+                        <p>Watchlist</p>
+                    </a>
+                    <a href="">
+                        <p>Purchase History</p>
+                    </a>
+                    <a href="">
+                        <p>Buy Again</p>
+                    </a>
+                    <a href="">
+                        <p>Selling</p>
+                    </a>
+                    <a href="saved.html">
+                        <p>Saved Searches</p>
+                    </a>
+                    <a href="">
+                        <p>Saved Sellers</p>
+                    </a>
+                    <a href="">
+                        <p>Messages</p>
+                    </a>
+
+                </div>
+            </div>
+            <div style="padding:3.5%;" id="sc121">
+                <i class="fa-solid fa-bell"></i>
+                <div id="sc122">
+                    <h1>You are all caught up!</h1>
+                </div>
+
+            </div>
+            <div style="margin:5%;" id="sc13">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div id="sc131">
+                    <h1>Your cart is empty</h1>
+                    <h3>Time to start shopping!</h3>
+                </div>
+                <P id="cartData">3</P>
+            </div>
+        </div>
+
+    </div>
+    <hr style="margin-top:-1%; color: #f1ebeb;"> -->
+
+
+
+
+    <!-- 
+            1st nav bar ends here
+        -->
+
+
+<!-- 
+    <div id="sc2">
+        <div id="sc21" onclick="window.location.href='index.html'">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/1200px-EBay_logo.svg.png"
+                alt="">
+        </div>
+
+        <div id="sc22">
+            <p>
+                Shop by category
+            </p>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div id="sc23">
+            <i class="fa-solid fa-magnifying-glass" style="margin-left: 5px;"></i>
+            <input type="text" name="" id="">
+            <div>
+                <button name="" id="">
+                    All category
+                </button>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+        </div>
+
+        <button>
+            Search
+        </button>
+    </div>
+
+    <div id="sc3">
+        <hr>
+    </div> -->
+
+
+
+    <div id="reviewContainer">
+
+        <div id="picDiv">
+
+
+        </div>
+        <div id="bigPicDiv">
+            <div id="pic"></div>
+            <div id="dis"></div>
+            <div id="rightAr"><i class="fas fa-angle-right"></i></div>
+            <div id="leftAr"><i class="fas fa-angle-left"></i></div>
+        </div>
+        <div id="detailDiv">
+            <div id="addTitle"></div>
+            <div id="condition"></div>
+
+            <div id="priceDiv">
+                <div>
+                    <div>Price: <span id="p"></span></div>
+                </div>
+                <div>
+                    <div id="buyit">Buy It Now</div>
+                    <div id="acart" onclick="addToCart()">Add to cart</div>
+                </div>
+            </div>
+
+            <div id="makeOfferDiv">
+                <div>
+                    <div id="B">Best: <span id="b"></span></div>
+                    <div id="of">Offer:</div>
+                </div>
+                <div>
+                    <div id="makeOf">Make Offer</div>
+                    <div id="adToWatch">Add to Watchlist</div>
+                    <img id="loveImg"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAAAXNSR0IArs4c6QAAA/hJREFUSA21ll1oXEUUx+fM3uzeTVLbopJWqdSHQCERwQ/UCrFrdyNixQSzm02pRoog+CKID7ZY7IPgB75IBG2fKsZ2k4200NbUZDcb+yAV8UFEfGjB4INt8cGITTZ39849/s9Npmw3aZq268ByZuac8//dM3dm7pKqa7H05HNMvIeYtjNzGxHNIuS8UnS8SUW/vJLv+qs2pTV99u6qqrykFPdivh05G5BzGRrfQ2PYy6dO18aTHbSkS5t85eeQ8JSdW25plhS97Y0lD4kv1ld4jRV/ANiG5bGLM4B/5ygnO5dPXJKZELgE+wGw+xTRFUX8foTpbMu6+M/l8kJzNeDHyTDE1bOLSfSxWMDeWhyrcY7QoSZN5+Jxd37u3/KDhrhLMe1TzK2A/gHoYwINgVjG6bAyoh91xMks5BIzIlTf4n2FrKHgC5CioY9UJcJ6sDyWzNXHytjNlrYGxh8F9FGpFMu7g8J3xnxKKgPsgevBrGAsU3ye2ZyQMVGkxxvdedL6VrJL0F+WKt2lZYOEgVjGG8EkTgBYljfldyOYxIea0Ja+sJxwN2KN5J3J5Fqal+/+ZC1xNka0DRjC0nh3beKQDWIDGm2ttrA0luYfAcx51fWNBlk9q42NM6ux1X8XR1D1O2xAo63VRoUzGifxGwFwoAYbDbJ6V7XB0tSkjgEa4I2+KFvYBjXKhprQFgappqPaO9p9Hvv1iBxmNv7njQJZnVBTLgowvHzighaH4/ABPMHfWONn3L6JV23w7VrREk3RdtzYO6IXAudz3X8q0ntlIlDq03hm6knp306LZ4vbRSvUgPb8cNdF6YdA6VRGkydIq4/QjRn2T7b2lzpl/laa5Bpj5MqLiaZoW53w8rYDlI+7tfAV9uwAzsxl1ipRGUn9Zv1rsdGB0jbyffkYtKGcnDeS2g0tnL7FdrVCGYqjne55BU8xLgkUqNLNVNo6MNVhYdA60873DtbChHENUCZ+zXdUtmy+v1cSBFox/nRzeuph8a3WmvuLD1V9E1aG3G+3bNraI1r1OcuAEnBhqN2TBHzdT2F57/TZlNzs5I76ZDt2M8UuPzAlPOBdgJ3e3OL0iIb119oVgRIgCU90OvifQscAXRcYNR7tn3yhNln6sf7CroCDMzjHd+CdjHRu3Ng7cySxUB9nx9cFSsD0wYS/vzO5B0/9GT6grgr4azczudcmu5nCIBs+Dl8cMYf3dyR3/3T4kar1r2Sv2aUrBdg5gA4GAb8bjon2IdEwqw9RPWlN7y2Mpg7Y2NXsmoEign9przMFQ1i+pZXBJ1WpN7yx1NBqkFrfTQElMdo3kcZVNSz9iNIvl/PJEen/r81NF592sxM7bwXyH8fitetAhvOzAAAAAElFTkSuQmCC"
+                        alt="">
+                </div>
+            </div>
+            <div id="shipping">
+                <p class="At">Shipping:</p>
+                <div>
+                    <p class="Af">$28.00 USPS First Class Mail International / First Class Package International Service
+                        | See
+                        details</p>
+                    <p class="As">International shipment of items may be subject to customs processing and additional
+                        charges.Located in:Round Lake, Illinois, United States</p>
+                </div>
+            </div>
+
+
+            <div id="deliver">
+                <p class="At">Delivery:</p>
+                <div>
+                    <p>Estimated between <span class="Af"> Fri. Apr. 8 and Wed. May. 18</span></p>
+                    <p class="As">Seller ships within 1 day after receiving cleared payment- opens in a new window or
+                        tab. </p>
+                </div>
+            </div>
+            <div id="return">
+                <p class="At">Returns:</p>
+                <p class="Ar">Seller does not accept returns | See details</p>
+            </div>
+            <div id="payA">
+                <p class="Ap">Payments:</p>
+                <div id="Ao">
+                    <div class="yesA"><img
+                            src="https://newsroom.mastercard.com/wp-content/uploads/2016/09/paypal-logo.png" alt="">
+                    </div>
+                    <div class="yesA"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxypYHbwQQ-dIMMmQkXri_udlUtCgpoOVuckzns9wcTvoc4aOjXCkC0LRHAno2P9jofXc&usqp=CAU"
+                            alt=""></div>
+
+                    <div class="yesA"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Visa.svg/1200px-Visa.svg.png"
+                            alt=""></div>
+
+                    <div class="yesA">
+                        <img src="https://vectorlogo4u.com/wp-content/uploads/2020/10/mastercard-logo-01.png" alt="">
+                    </div>
+
+                    <div class="yesA">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToh2UtL5QUUFU0oAtU-Oss9T4J6zIUcdrvv4bWfcc0Howun6YS6Mj8XAnbLBNWjfVxQy8&usqp=CAU"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="shopConDiv">
+
+            <div id="shopC">
+                <p id="spA">Shop with confidence</p>
+                <h4>eBay Money Back Guaurantee</h4>
+                <p>Get the item you ordered or get your money back.</p>
+                <a href="">Learn More</a>
+            </div>
+
+            <div id="sellerInfo">
+                <h2>Seller information</h2>
+                <p>clucth665(839)</p>
+                <p>99.7% Positive feedback</p>
+                <p>----------------------------------------------</p>
+                <div id="Si">
+                    <img id="cLove"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAAAXNSR0IArs4c6QAAA/hJREFUSA21ll1oXEUUx+fM3uzeTVLbopJWqdSHQCERwQ/UCrFrdyNixQSzm02pRoog+CKID7ZY7IPgB75IBG2fKsZ2k4200NbUZDcb+yAV8UFEfGjB4INt8cGITTZ39849/s9Npmw3aZq268ByZuac8//dM3dm7pKqa7H05HNMvIeYtjNzGxHNIuS8UnS8SUW/vJLv+qs2pTV99u6qqrykFPdivh05G5BzGRrfQ2PYy6dO18aTHbSkS5t85eeQ8JSdW25plhS97Y0lD4kv1ld4jRV/ANiG5bGLM4B/5ygnO5dPXJKZELgE+wGw+xTRFUX8foTpbMu6+M/l8kJzNeDHyTDE1bOLSfSxWMDeWhyrcY7QoSZN5+Jxd37u3/KDhrhLMe1TzK2A/gHoYwINgVjG6bAyoh91xMks5BIzIlTf4n2FrKHgC5CioY9UJcJ6sDyWzNXHytjNlrYGxh8F9FGpFMu7g8J3xnxKKgPsgevBrGAsU3ye2ZyQMVGkxxvdedL6VrJL0F+WKt2lZYOEgVjGG8EkTgBYljfldyOYxIea0Ja+sJxwN2KN5J3J5Fqal+/+ZC1xNka0DRjC0nh3beKQDWIDGm2ttrA0luYfAcx51fWNBlk9q42NM6ux1X8XR1D1O2xAo63VRoUzGifxGwFwoAYbDbJ6V7XB0tSkjgEa4I2+KFvYBjXKhprQFgappqPaO9p9Hvv1iBxmNv7njQJZnVBTLgowvHzighaH4/ABPMHfWONn3L6JV23w7VrREk3RdtzYO6IXAudz3X8q0ntlIlDq03hm6knp306LZ4vbRSvUgPb8cNdF6YdA6VRGkydIq4/QjRn2T7b2lzpl/laa5Bpj5MqLiaZoW53w8rYDlI+7tfAV9uwAzsxl1ipRGUn9Zv1rsdGB0jbyffkYtKGcnDeS2g0tnL7FdrVCGYqjne55BU8xLgkUqNLNVNo6MNVhYdA60873DtbChHENUCZ+zXdUtmy+v1cSBFox/nRzeuph8a3WmvuLD1V9E1aG3G+3bNraI1r1OcuAEnBhqN2TBHzdT2F57/TZlNzs5I76ZDt2M8UuPzAlPOBdgJ3e3OL0iIb119oVgRIgCU90OvifQscAXRcYNR7tn3yhNln6sf7CroCDMzjHd+CdjHRu3Ng7cySxUB9nx9cFSsD0wYS/vzO5B0/9GT6grgr4azczudcmu5nCIBs+Dl8cMYf3dyR3/3T4kar1r2Sv2aUrBdg5gA4GAb8bjon2IdEwqw9RPWlN7y2Mpg7Y2NXsmoEign9przMFQ1i+pZXBJ1WpN7yx1NBqkFrfTQElMdo3kcZVNSz9iNIvl/PJEen/r81NF592sxM7bwXyH8fitetAhvOzAAAAAElFTkSuQmCC"
+                        alt="">
+                    <a href="">
+                        <p>Save this Seller</p>
+                    </a>
+                </div>
+                <a href="">
+                    <p>Contact Seller</p>
+                </a>
+                <a href="">
+                    <p>Visit Store</p>
+                </a>
+                <a href="">
+                    <p>See other items</p>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- similar sponsored items -->
+
+    <h2 id="smA">Similar sponsored Items</h2>
+    <div id="similarItem">
+
+
+
+    </div>
+    <div id="sc7">
+        <hr>
+
+        <div id="sc71">
+            <div>
+                <a href="">
+                    <h3>Buy</h3>
+                </a>
+                <a href="">
+                    <p>Registration</p>
+                </a>
+                <a href="">
+                    <p>eBay Money Back Guarantee</p>
+                </a>
+                <a href="">
+                    <p>Bidding & buying help</p>
+                </a>
+                <a href="">
+                    <p>Stores</p>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <h3>Sell</h3>
+                </a>
+                <a href="">
+                    <p>Start selling</p>
+                </a>
+                <a href="">
+                    <p>Learn to sell</p>
+                </a>
+                <a href="">
+                    <p>Affiliates</p>
+                </a>
+                <a href="">
+                    <h3 style="margin-top: 50px;">Tools & apps</h3>
+                </a>
+                <a href="">
+                    <p>Developers</p>
+                </a>
+                <a href="">
+                    <p>Security center</p>
+                </a>
+                <a href="">
+                    <p>Site map</p>
+                </a>
+
+            </div>
+            <div>
+                <a href="">
+                    <h3>Stay connected </h3>
+                </a>
+                <a href="">
+                    <p>eBay's Blogs</p>
+                </a>
+                <a href="">
+                    <p><i class="fa-brands fa-facebook-square"></i> Facebook</p>
+                </a>
+                <a href="">
+                    <p><i class="fa-brands fa-twitter-square"></i> Twitter</p>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <h3>About eBay</h3>
+                </a>
+                <a href="">
+                    <p>Company info</p>
+                </a>
+                <a href="">
+                    <p>News</p>
+                </a>
+                <a href="">
+                    <p>Investors</p>
+                </a>
+                <a href="">
+                    <p>Careers</p>
+                </a>
+                <a href="">
+                    <p>Government relations</p>
+                </a>
+                <a href="">
+                    <p>Advertise with us</p>
+                </a>
+                <a href="">
+                    <p>Policies</p>
+                </a>
+                <a href="">
+                    <p>Verified Rights Owner (VeRO) Program</p>
+                </a>
+            </div>
+            <div style="color:#767676">
+                <h3>Help & Contact</h3>
+                <p>Seller Information Center</p>
+                <p>Contact us</p>
+
+                <h3 style="margin-top: 50px;">Community</h3>
+                <p>Announcements</p>
+                <p>Discussion boards</p>
+                <p>eBay Giving Works</p>
+
+                <h3 style="margin-top: 50px;">eBay Sites</h3>
+            </div>
+        </div>
+        <div id="shuc6">
+            <p>Copyright © 1995-2022 eBay Inc. All Rights Reserved.
+                Accessibility, User Agreement, Privacy, Cookies, Do not sell my personal information and AdChoice</p>
+        </div>
+        <div id="sc8" style="margin-left:90%">
+            <img src="https://ir.ebaystatic.com/rs/v/acxp0mbuba3zva1qr31idsmitmi.png" alt="">
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+    let mainDiv = document.getElementById("pic");
+    let priceDiv = document.getElementById("p");
+    let desc = document.getElementById("dis");
+    let obj = JSON.parse(localStorage.getItem("detail"));
+    var cardItem = JSON.parse(localStorage.getItem("cardItem")) || [];
+function addToCart(){
+    cardItem.push(obj);
+    localStorage.setItem("cardItem",JSON.stringify(cardItem));
+
+    location.href = "cartPage.html"
+}
+
+    
+    display(obj)
+
+    
+    function display(obj){
+        var cont = document.createElement("div");
+        var img = document.createElement("img");
+        img.src = obj.image;
+        img.setAttribute("id","myimg");
+        var price = document.createElement("h3");
+        price.textContent = "₹ "+obj.price;
+        var des = document.createElement("p");
+        des.innerText = obj.des;
+        desc.append(des);
+        priceDiv.append(price);
+        cont.append(img);
+        mainDiv.append(cont)
+    }
+// console.log(obj);
+  
+
+
+
+
+//     let condition = document.getElementById("condition");
+//     let p = document.getElementById("p");
+
+//     let addTitle = document.getElementById("addTitle");
+
+//     let visitData = JSON.parse(localStorage.getItem("Database")) || [];
+
+//     function display(visitData) {
+
+//         let bigPic = document.getElementById("bigPicDiv");
+
+//         let imgDiv = document.createElement("div");
+//         imgDiv.id = "appDiv";
+//         let image = document.createElement("img");
+//         image.src = visitData[visitData.length - 1].thumbnail;
+//         image.id = "bigI";
+
+
+
+//         addTitle.innerText = visitData[visitData.length - 1].title;
+
+//         let pDiv = document.createElement("div");
+
+
+//         condition.innerText = "Condition:" + visitData[visitData.length - 1].condition;
+
+//         p.innerText = "US" + " " + visitData[visitData.length - 1].price.raw;
+
+//         imgDiv.append(image);
+//         bigPic.append(imgDiv);
+
+
+
+//     }
+
+
+//     display(visitData);
+
+
+//     let picA = document.getElementById("picDiv");
+
+//     function picF(visitData) {
+//         let div = document.createElement("div");
+
+//         let imgA = document.createElement("img");
+//         imgA.src = visitData[visitData.length - 1].thumbnail;
+//         div.append(imgA);
+//         picA.append(div);
+//         imgA.id = "sImg";
+//     }
+
+//     picF(visitData);
+
+
+
+//     function addToCart() {
+//         let ourData = JSON.parse(localStorage.getItem("Database")) || [];
+
+//         localStorage.setItem("yourCart", JSON.stringify(ourData));
+
+//         ourData = [];
+//         window.location.href = "cart.html";
+//     }
+
+
+// <script type="module">
+
+//     let data = await JSON.parse(localStorage.getItem("items"));
+
+//     var comic = document.getElementById("similarItem");
+
+//     import appendData from "./components/Amain.js";
+
+//     appendData(data, comic);
+
+
+// let cat = JSON.parse(localStorage.getItem('yourCart')) || 0;
+
+// let xA = document.getElementById('cartData');
+// xA.innerHTML = cat.length;
+
+// xA.addEventListener('click', () => {
+//     window.location.href = 'cart.html';
+// });
+
+//     let flagfornav = JSON.parse(localStorage.getItem("flagforindex"))
+//     let logindata = JSON.parse(localStorage.getItem("loginData"))
+//     let namefornav = logindata[0].name
+
+
+
+//     console.log(flagfornav)
+//     if (flagfornav == true) {
+//         console.log(namefornav)
+//         document.querySelector("#sc111").textContent = namefornav
+//     }
+
+//     let shubham001 = document.querySelector("#sc23 > input[type=text]")
+
+//     shubham001.addEventListener("keypress", function (event) {
+//         if (event.code == "Enter") {
+//             localStorage.setItem("search_term", shubham001.value);
+//             window.location.href = "MahiArt.html";
+
+//         }
+
+
+
+//     })
+
+//     document.querySelector("#sc2 > button").addEventListener("click", function (event) {
+//         localStorage.setItem("search_term", shubham001.value)
+//         window.location.href = "MahiArt.html"
+//     })
+
+</script>

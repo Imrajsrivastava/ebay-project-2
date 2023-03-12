@@ -1,0 +1,270 @@
+#top-section a{
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    text-decoration: none;
+    margin-left: 5px;
+    font-weight:400;
+}
+#top-section{
+    margin-left: 30px;
+}
+
+.fa-solid {
+    color: rgb(112,112,112);
+    font-size: 10px;
+    margin: 0px 7px;
+}
+
+#top-section a:last-child{
+    color: rgb(112, 112, 112);
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    text-decoration: none;
+    font-weight:400;
+    
+}
+#top-heading{
+    
+    color: rgb(25,25,25);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-left: 26px;
+}
+#right-section{
+    width: 17%;
+    /* border: 2px solid salmon; */
+    margin: 20px 0px 0px 25px;
+}
+#right-section h3{
+    color: rgb(25,25,25);
+    font-size: 16px;
+    margin: 5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+
+}
+#right-section button{
+    display: block;
+    margin-bottom: 6px;
+    text-align: left;
+    border: none;
+    background-color: white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+#right-section button i{
+    font-size: 16px;
+    color: blueviolet;
+}
+#main-container{
+    display: flex;
+}
+#left-section{
+    width: 80%;
+    /* border: 2px solid black; */
+    margin-top: 20px;
+}
+#left-section h3{
+    color: rgb(51,51,51);
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin-top: -2px;
+}
+.right-div{
+    width: 98%;
+    /* border: 2px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 25px;
+    text-decoration: none;
+    
+}
+.right-div div{
+    text-align: center;
+    font-size: 14px;
+    color: rgb(51,51,51);
+}
+.right-div img{
+   width: 100%;
+}
+#img-box{
+    display: flex;
+    margin-top: 30px;
+}
+#left-img{
+    width: 30%;
+    background-color:#1DCBCA;
+}
+#left-img h3{
+    margin: 30px 0px 0px 18px;
+    font-size: 32px;
+}
+#left-img div{
+    margin-top: 10px;
+    margin-left: 22px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(51,51,51);
+}
+#left-img button{
+    margin-top: 150px;
+    margin-left: 22px;
+    padding: 10px;color: rgb(51,51,51);
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    background-color:#1DCBCA ;
+    /* border: 1px solid rgb(6, 95, 95); */
+    cursor: pointer;
+}
+#left-img button:hover{
+    color: #1DCBCA;
+    background-color: rgb(38, 27, 49) ;
+}
+
+#right-section{
+    width: 19%;
+    /* border: 2px solid salmon; */
+    margin: 20px 0px 0px 25px;
+}
+#right-section h3{
+    color: rgb(25,25,25);
+    font-size: 16px;
+    margin: 5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+
+}
+#right-section button{
+    display: block;
+    margin-bottom: 6px;
+    text-align: left;
+    border: none;
+    background-color: white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+#right-section button i{
+    font-size: 16px;
+    color: blueviolet;
+}
+#main-container{
+    display: flex;
+}
+#left-section{
+    width: 80%;
+    /* border: 2px solid black; */
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#left-section h3{
+    color: rgb(51,51,51);
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin-top: -2px;
+}
+.right-div{
+    width: 98%;
+    /* border: 2px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 25px;
+    text-decoration: none;
+    
+}
+.right-div div{
+    text-align: center;
+    font-size: 14px;
+    color: rgb(51,51,51);
+}
+.right-div img{
+   width: 100%;
+   height: 165px;
+}
+#main-container{
+    display: flex;
+}
+.right-div div{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-top: 10px;
+}
+.right-div h4{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+.right-div h4:last-child{
+    margin-top: -15px;
+}
+#left-section a{
+    text-decoration: none;
+}
+#left-section button{
+    display: inline;
+    padding: 23px 60px;
+    margin: 0px 8px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgb(149, 205, 223);
+}
+#brand h3{
+    margin-top: 40px;
+}
+#brand-btn button{
+    border-radius: 48%;
+    background-color: coral;
+}
+#brand-btn button:hover{
+    background-color: rgb(104, 247, 199);
+    scale: 1.1;
+    border-radius: 47%;
+}
+.limited-deal div{
+    font-size: 14px;
+    text-align: left;
+}
+#brand-btn{
+    margin-bottom: 30px;
+}
+#brand-btn a{
+    cursor: pointer;
+    color: rgb(51,51,51);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sort h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: rgb(51,51,51);
+}
+#sort button{
+    border: 1px solid teal;
+    padding: 8px 25px;
+    background-color: burlywood;
+    margin-top: 5px;
+    border-radius: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sort button:hover{
+    background-color: #1DCBCA;
+    scale: 1.2;
+    cursor: pointer;
+}
+#imgAppend{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#imgAppend:hover{
+    scale: 1.1;
+}
